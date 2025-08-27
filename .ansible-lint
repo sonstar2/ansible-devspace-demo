@@ -1,0 +1,18 @@
+exclude_paths:
+  - ".ansible/"
+  - ".github/"
+  - ".vscode/"
+  - .gitattributes
+  - .yamllint
+  - .pre-commit-config.yaml
+  - .ansible-lint
+
+
+skip_list:
+  - "no-log-password"  # Skip the rule that checks for logging sensitive information
+  - "403"              # Skip the rule for package installs not using 'latest'
+  - "command-instead-of-module" # Skip warning about using 'command' instead of a specific module
+
+warn_list:
+  - "fqcn"             # Warn instead of error for missing FQCN
+  - "name"             # Warn instead of error for missing task names
