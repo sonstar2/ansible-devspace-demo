@@ -1,6 +1,6 @@
 schemaVersion: 2.2.0
 metadata:
-  name: ansible-demo
+  name: fred-ansible-demo
 components:
   - name: tooling-container
     container:
