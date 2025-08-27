@@ -17,6 +17,11 @@ components:
         - name: 'KUBEDOCK_ENABLED'
           value: "true"
 commands:
+  - id: pre-commit-module
+    exec:
+      label: "Install pre-commit module"
+      commandLine: 'source $HOME/.bashrc && pip install pre-commit'
+      component: tooling-container
 
   - id: molecule-create
     exec:
