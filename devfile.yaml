@@ -20,7 +20,7 @@ commands:
   - id: pre-commit-module
     exec:
       label: "Install pre-commit module"
-      commandLine: 'source $HOME/.bashrc && pip install pre-commit'
+      commandLine: 'source $HOME/.bashrc && pip-3.11 install pre-commit'
       component: tooling-container
 
   - id: molecule-create
