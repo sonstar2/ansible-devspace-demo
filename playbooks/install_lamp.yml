@@ -1,0 +1,20 @@
+---
+- name: Deploy lamp stack
+  hosts: all
+  tasks:
+    - name: Install apache
+      ansible.builtin.package:
+        name: apache2
+        state: present
+    - name: Install php
+      ansible.builtin.package:
+        name: php
+        state: present
+    - name: Install php-mysql
+      ansible.builtin.package:
+        name: php-mysql
+        state: present
+    - name: Install mysql-server
+      ansible.builtin.package:
+        name: mysql-server
+        state: present
